@@ -14,7 +14,7 @@ export default function App() {
   const createProduct = async (e) => {
     e.preventDefault();
 
-    fetch("https://products-backend.onrender.com/products", {
+    fetch("https://productsbackend-production.up.railway.app/products", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -39,7 +39,7 @@ export default function App() {
 
   useEffect(() => {
     const fetchProducts = async () => {
-        fetch(`https://products-backend.onrender.com/products`, {
+        fetch(`https://productsbackend-production.up.railway.app/products`, {
           method: "GET",
         })
           .then((response) => response.json())
